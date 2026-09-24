@@ -4,7 +4,7 @@
   "artifacts": [
     {
       "report": {
-        "path": "Demo_EAP.Report"
+        "path": "VC_EAP.Report"
       }
     }
   ],
