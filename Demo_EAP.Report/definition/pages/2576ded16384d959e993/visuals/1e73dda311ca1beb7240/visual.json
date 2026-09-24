@@ -1,9 +1,9 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "2743888965502b5a1051",
+  "name": "1e73dda311ca1beb7240",
   "position": {
-    "x": 1201.8990057440772,
-    "y": 388.34944289372305,
+    "x": 1070.4491570165062,
+    "y": 434.69601994417849,
     "z": 0,
     "height": 300,
     "width": 300
@@ -22,11 +22,11 @@
                       "Entity": "DIM_EAP_INCDNT_ACTY"
                     }
                   },
-                  "Property": "Derived EAP Incident Activity Description"
+                  "Property": "EAP Incident Activity Code"
                 }
               },
-              "queryRef": "DIM_EAP_INCDNT_ACTY.Derived EAP Incident Activity Description",
-              "nativeQueryRef": "Derived EAP Incident Activity Description"
+              "queryRef": "DIM_EAP_INCDNT_ACTY.EAP Incident Activity Code",
+              "nativeQueryRef": "EAP Incident Activity Code"
             },
             {
               "field": {
@@ -36,11 +36,11 @@
                       "Entity": "DIM_EAP_INCDNT_ACTY"
                     }
                   },
-                  "Property": "EAP Incident Activity Code"
+                  "Property": "EAP Incident Activity Description"
                 }
               },
-              "queryRef": "DIM_EAP_INCDNT_ACTY.EAP Incident Activity Code",
-              "nativeQueryRef": "EAP Incident Activity Code"
+              "queryRef": "DIM_EAP_INCDNT_ACTY.EAP Incident Activity Description",
+              "nativeQueryRef": "EAP Incident Activity Description"
             }
           ]
         }
@@ -51,21 +51,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "ff6f5bd3920ad065a007",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DIM_EAP_INCDNT_ACTY"
-              }
-            },
-            "Property": "Derived EAP Incident Activity Description"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "84f5b6c23b71d6a16154",
+        "name": "d1df18b13e80070e08d4",
         "field": {
           "Column": {
             "Expression": {
@@ -74,6 +60,20 @@
               }
             },
             "Property": "EAP Incident Activity Code"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c168b98320eb03ad4ae5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_EAP_INCDNT_ACTY"
+              }
+            },
+            "Property": "EAP Incident Activity Description"
           }
         },
         "type": "Categorical"
