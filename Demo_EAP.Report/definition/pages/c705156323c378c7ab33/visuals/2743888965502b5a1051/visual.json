@@ -1,0 +1,83 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "2743888965502b5a1051",
+  "position": {
+    "x": 1201.8990057440772,
+    "y": 388.34944289372305,
+    "z": 0,
+    "height": 300,
+    "width": 300
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_EAP_INCDNT_ACTY"
+                    }
+                  },
+                  "Property": "Derived EAP Incident Activity Description"
+                }
+              },
+              "queryRef": "DIM_EAP_INCDNT_ACTY.Derived EAP Incident Activity Description",
+              "nativeQueryRef": "Derived EAP Incident Activity Description"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_EAP_INCDNT_ACTY"
+                    }
+                  },
+                  "Property": "EAP Incident Activity Code"
+                }
+              },
+              "queryRef": "DIM_EAP_INCDNT_ACTY.EAP Incident Activity Code",
+              "nativeQueryRef": "EAP Incident Activity Code"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ff6f5bd3920ad065a007",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_EAP_INCDNT_ACTY"
+              }
+            },
+            "Property": "Derived EAP Incident Activity Description"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "84f5b6c23b71d6a16154",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_EAP_INCDNT_ACTY"
+              }
+            },
+            "Property": "EAP Incident Activity Code"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}
